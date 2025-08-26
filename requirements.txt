@@ -1,4 +1,4 @@
-python==3.11.0
+
 joblib
 openpyxl
 scikit-learn==1.5.0
