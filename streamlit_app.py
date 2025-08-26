@@ -7,7 +7,7 @@ from io import BytesIO
 import streamlit as st
 
 def load_model():
-    model = joblib.load('weights/logistic_regression_model.pkl')
+    model = joblib.load('weights/logistic_model.pkl')
     return model
 
 def prediction(text, model):
