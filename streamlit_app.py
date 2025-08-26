@@ -8,7 +8,8 @@ import streamlit as st
 
 
 def load_model():
-    return joblib.load('weights/logistic_model.pkl')
+    model = joblib.load('./logistic.pkl')
+    return model
 
 def prediction(text, model):
     # Assuming the model expects a list of texts for prediction
