@@ -6,7 +6,7 @@ import pickle
 from io import BytesIO
 import streamlit as st
 
-@st.cache_resource
+
 def load_model():
     return joblib.load('weights/logistic_model.pkl')
 
