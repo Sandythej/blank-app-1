@@ -6,9 +6,9 @@ import pickle
 from io import BytesIO
 import streamlit as st
 
+@st.cache_resource
 def load_model():
-    model = joblib.load('weights/logistic_model.pkl')
-    return model
+    return joblib.load('weights/logistic_model.pkl')
 
 def prediction(text, model):
     # Assuming the model expects a list of texts for prediction
