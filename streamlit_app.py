@@ -6,6 +6,7 @@ import pickle
 from io import BytesIO
 import streamlit as st
 import sys
+st.set_page_config(layout="wide")
 st.markdown(
     """
     <style>
@@ -27,7 +28,7 @@ def prediction(text, model):
     return prediction
 
 def main():
-    st.set_page_config(layout="wide")
+
     st.header("C2P Prediction App")
     st.write("Python version:", sys.version)
     st.subheader("Assessing alerts relevant for our products or business")
