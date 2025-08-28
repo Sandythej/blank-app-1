@@ -6,7 +6,7 @@ import pickle
 from io import BytesIO
 import streamlit as st
 import sys
-
+st.set_page_config(layout="wide")
 st.markdown(
     """
     <style>
