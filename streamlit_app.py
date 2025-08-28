@@ -5,7 +5,7 @@ import io
 import pickle
 from io import BytesIO
 import streamlit as st
-
+import sys
 
 def load_model():
     model = joblib.load('./logistic.pkl')
