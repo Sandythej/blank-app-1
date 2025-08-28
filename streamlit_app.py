@@ -54,7 +54,7 @@ def main():
             
             st.write("Prediction Results:")
             
-            styled_df = df.style.map(lambda x: f"background-color: {'green' if x == 'YES' else 'red'}", subset='Predictions')
+            styled_df = df.style.map(lambda x: f"background-color: {'lightgreen' if x == 'YES' else 'lightred'}", subset='Predictions')
             #styled_df = dataset.style.background_gradient(cmap='viridis')
             #html = styled_df.to_html()
 
