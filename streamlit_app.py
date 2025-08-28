@@ -8,7 +8,7 @@ import streamlit as st
 import sys
 
 def load_model():
-    model = joblib.load('./logistic.pkl')
+    model = joblib.load('./logistic_regression_model.pkl')
     return model
 
 def prediction(text, model):
@@ -63,3 +63,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
