@@ -17,6 +17,7 @@ def prediction(text, model):
     return prediction
 
 def main():
+    st.set_page_config(page_title="Predicting regulatory alerts")
     st.header("C2P Prediction App")
     st.write("Python version:", sys.version)
     st.subheader("Assessing alerts relevant for our products or business")
