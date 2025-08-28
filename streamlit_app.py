@@ -7,17 +7,7 @@ from io import BytesIO
 import streamlit as st
 import sys
 st.set_page_config(layout="wide")
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #00325B;
-        textColor = #FFFFFF;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
 def load_model():
     model = joblib.load('./logistic_regression_model.pkl')
