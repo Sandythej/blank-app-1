@@ -59,7 +59,27 @@ def main():
             
                           
         except Exception as e:
-            st.error(f"An error occurred: {e}")
+        st.error(f"An error occurred: {e}")
+    footer = """
+    <style>
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    }
+    </style>
+    <div class="footer">
+    Developed with ❤ by Your Name
+    </div>
+    """
+    
+    st.markdown(footer, unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
