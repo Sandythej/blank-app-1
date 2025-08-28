@@ -36,8 +36,6 @@ def main():
             
             st.write("Excel File Contents:")
             
-            st.dataframe(df)
-            
             model =load_model()
             
             # Combine the two inputs
@@ -54,7 +52,7 @@ def main():
             
             st.write("Prediction Results:")
             
-            styled_df = df.style.map(lambda x: f"background-color: {'lightgreen' if x == 'YES' else 'lightred'}", subset='Predictions')
+            styled_df = df.style.map(lambda x: f"background-color: {'lightgreen' if x == 'YES' else 'red'}", subset='Predictions')
             #styled_df = dataset.style.background_gradient(cmap='viridis')
             #html = styled_df.to_html()
 
