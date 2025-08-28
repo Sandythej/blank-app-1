@@ -44,6 +44,7 @@ def main():
             df.rename(columns={'Name':'C2P Alerts_mod'},inplace=True)
             
             st.write("Excel File Contents:")
+            pd.set_option('display.max_colwidth', None)
             st.write(df)
             
             model =load_model()
