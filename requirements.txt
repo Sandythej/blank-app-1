@@ -206,8 +206,6 @@ python-docx==1.1.2
 python-dotenv==1.0.1
 pytz==2024.2
 pyviz_comms==3.0.4
-pywin32==308
-pywin32-ctypes==0.2.3
 PyYAML==6.0.2
 pyzmq==26.2.0
 referencing==0.36.1
